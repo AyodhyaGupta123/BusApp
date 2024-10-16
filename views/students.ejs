@@ -1,0 +1,235 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIRT College Bus Students</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body class="bg-gray-100 font-sans">
+    <nav class="bg-gradient-to-r from-yellow-600 to-blue-600 text-white shadow-lg fixed w-full z-10">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <div class="flex items-center">
+                    <img src="https://www.sirtbhopal.ac.in/assets/images/sagar-logo-new.jpg" alt="SIRT Logo" class="h-12 mr-4">
+                    <span class="font-semibold text-xl text-white hover:bg-yellow-600 px-2 py-2 rounded-md transition">Bus System</span>
+                </div>
+                <div class="hidden md:flex space-x-6">
+
+                    <a href="/" class="flex flex-col items-center hover:bg-blue-700 px-3 py-2 rounded transition duration-300">
+                        <i class="fas fa-home text-2xl mb-1"></i>
+                        <span class="text-xs">Home</span>
+                    </a>
+
+                    <a href="/deshboard" class="flex flex-col items-center hover:bg-blue-700 px-3 py-2 rounded transition duration-300">
+                        <i class="fas fa-tachometer-alt text-2xl mb-1"></i>
+                        <span class="text-xs">Deshboard</span>
+                    </a>
+
+                    <a href="/routes" class="flex flex-col items-center hover:bg-blue-700 px-3 py-2 rounded transition duration-300">
+                        <i class="fas fa-route text-2xl mb-1"></i>
+                        <span class="text-xs">Routes</span>
+                    </a>
+                    <a href="/attendence" class="flex flex-col items-center hover:bg-blue-700 px-3 py-2 rounded transition duration-300">
+                        <i class="fas fa-clipboard-check text-2xl mb-1"></i>
+                        <span class="text-xs">Attendance</span>
+                    </a>
+                    <a href="#" class="flex flex-col items-center hover:bg-blue-700 px-3 py-2 rounded transition duration-300">
+                        <i class="fas fa-credit-card text-2xl mb-1"></i>
+                        <span class="text-xs">Payment</span>
+                    </a>
+                    <a href="/students" class="flex flex-col items-center hover:bg-blue-700 px-3 py-2 rounded transition duration-300">
+                        <i class="fas fa-user-graduate text-2xl mb-1"></i>
+                        <span class="text-xs">Students</span>
+                    </a>
+                    <a href="/livemap" class="flex flex-col items-center hover:bg-blue-700 px-3 py-2 rounded transition duration-300">
+                        <i class="fas fa-map-marked-alt text-2xl mb-1"></i>
+                        <span class="text-xs">Live Map</span>
+                    </a>
+                    <a href="#" class="flex flex-col items-center hover:bg-blue-700 px-3 py-2 rounded transition duration-300">
+                        <i class="fas fa-info-circle text-2xl mb-1"></i>
+                        <span class="text-xs">Info</span>
+                    </a>
+                </div>
+                <div class="md:hidden">
+                    <button class="text-white focus:outline-none">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="container  items-center mx-auto px-4 pt-20">
+        <!-- Student List -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div class="bg-white rounded-lg shadow-md p-6">
+                <h2 class="text-2xl font-semibold mb-4 text-blue-500"><i class="fas fa-user-graduate mr-2"></i>Student 1</h2>
+                <div class="space-y-2">
+                    <p><span class="font-medium">Name:</span> Ayodhya Gupta</p>
+                    <p><span class="font-medium">Enrollment No:</span> 1234567890</p>
+                    <p><span class="font-medium">Fee Update:</span> Paid</p>
+                    <p><span class="font-medium">Bus Code:</span> ABC123</p>
+                </div>
+            </div>
+        </div>
+        <!-- Add more student cards here -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div class="bg-white rounded-lg shadow-md p-6 mt-2">
+                <h2 class="text-2xl font-semibold mb-4 text-blue-500"><i class="fas fa-user-graduate mr-2"></i>Student 2</h2>
+                <div class="space-y-2">
+                    <p><span class="font-medium">Name:</span> Pravin </p>
+                    <p><span class="font-medium">Enrollment No:</span> 1234567890</p>
+                    <p><span class="font-medium">Fee Update:</span> Paid</p>
+                    <p><span class="font-medium">Bus Code:</span> ABC123</p>
+                </div>
+            </div>
+        </div>
+
+
+        <style>
+            #circle {
+            position: absolute;
+            width: 17px;
+            height: 17px;
+            /* background-color: rgb(66, 10, 10); */
+            border-radius: 50%;
+            transition:all ease 0.5s;
+            mix-blend-mode: difference;
+            border: 1.6px solid lightgreen;
+        }
+        </style>
+        <script>
+            document.addEventListener('mousemove', function(e){
+                var circle = document.getElementById('circle');
+                circle.style.left = e.pageX + 'px';
+                circle.style.top = e.pageY + 'px';
+            });
+        </script>
+        <div id="circle"></div>
+    
+    
+
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div class="bg-white rounded-lg shadow-md p-6 mt-4">
+                <h2 class="text-2xl font-semibold mb-4 text-blue-500"><i class="fas fa-user-graduate mr-2"></i>Student 3</h2>
+                <div class="space-y-2">
+                    <p><span class="font-medium">Name:</span> Ayodhya Gupta</p>
+                    <p><span class="font-medium">Enrollment No:</span> 1234567890</p>
+                    <p><span class="font-medium">Fee Update:</span> Paid</p>
+                    <p><span class="font-medium">Bus Code:</span> ABC123</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div class="bg-white rounded-lg shadow-md p-6 mt-4">
+                <h2 class="text-2xl font-semibold mb-4 text-blue-500"><i class="fas fa-user-graduate mr-2"></i>Student 4</h2>
+                <div class="space-y-2">
+                    <p><span class="font-medium">Name:</span> Ayodhya Gupta</p>
+                    <p><span class="font-medium">Enrollment No:</span> 1234567890</p>
+                    <p><span class="font-medium">Fee Update:</span> Paid</p>
+                    <p><span class="font-medium">Bus Code:</span> ABC123</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div class="bg-white rounded-lg shadow-md p-6 mt-4">
+                <h2 class="text-2xl font-semibold mb-4 text-blue-500"><i class="fas fa-user-graduate mr-2"></i>Student 5</h2>
+                <div class="space-y-2">
+                    <p><span class="font-medium">Name:</span> Ayodhya Gupta</p>
+                    <p><span class="font-medium">Enrollment No:</span> 1234567890</p>
+                    <p><span class="font-medium">Fee Update:</span> Paid</p>
+                    <p><span class="font-medium">Bus Code:</span> ABC123</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div class="bg-white rounded-lg shadow-md p-6 mt-4">
+                <h2 class="text-2xl font-semibold mb-4 text-blue-500"><i class="fas fa-user-graduate mr-2"></i>Student 6</h2>
+                <div class="space-y-2">
+                    <p><span class="font-medium">Name:</span> Ayodhya Gupta</p>
+                    <p><span class="font-medium">Enrollment No:</span> 1234567890</p>
+                    <p><span class="font-medium">Fee Update:</span> Paid</p>
+                    <p><span class="font-medium">Bus Code:</span> ABC123</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div class="bg-white rounded-lg shadow-md p-6 mt-4">
+                <h2 class="text-2xl font-semibold mb-4 text-blue-500"><i class="fas fa-user-graduate mr-2"></i>Student 7</h2>
+                <div class="space-y-2">
+                    <p><span class="font-medium">Name:</span> Ayodhya Gupta</p>
+                    <p><span class="font-medium">Enrollment No:</span> 1234567890</p>
+                    <p><span class="font-medium">Fee Update:</span> Paid</p>
+                    <p><span class="font-medium">Bus Code:</span> ABC123</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div class="bg-white rounded-lg shadow-md p-6 mt-4">
+                <h2 class="text-2xl font-semibold mb-4 text-blue-500"><i class="fas fa-user-graduate mr-2"></i>Student 8</h2>
+                <div class="space-y-2">
+                    <p><span class="font-medium">Name:</span> Ayodhya Gupta</p>
+                    <p><span class="font-medium">Enrollment No:</span> 1234567890</p>
+                    <p><span class="font-medium">Fee Update:</span> Paid</p>
+                    <p><span class="font-medium">Bus Code:</span> ABC123</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div class="bg-white rounded-lg shadow-md p-6 mt-4">
+                <h2 class="text-2xl font-semibold mb-4 text-blue-500"><i class="fas fa-user-graduate mr-2"></i>Student 9</h2>
+                <div class="space-y-2">
+                    <p><span class="font-medium">Name:</span> Ayodhya Gupta</p>
+                    <p><span class="font-medium">Enrollment No:</span> 1234567890</p>
+                    <p><span class="font-medium">Fee Update:</span> Paid</p>
+                    <p><span class="font-medium">Bus Code:</span> ABC123</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div class="bg-white rounded-lg shadow-md p-6 mt-4">
+                <h2 class="text-2xl font-semibold mb-4 text-blue-500"><i class="fas fa-user-graduate mr-2"></i>Student 10</h2>
+                <div class="space-y-2">
+                    <p><span class="font-medium">Name:</span> Ayodhya Gupta</p>
+                    <p><span class="font-medium">Enrollment No:</span> 1234567890</p>
+                    <p><span class="font-medium">Fee Update:</span> Paid</p>
+                    <p><span class="font-medium">Bus Code:</span> ABC123</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div class="bg-white rounded-lg shadow-md p-6 mt-4">
+                <h2 class="text-2xl font-semibold mb-4 text-blue-500"><i class="fas fa-user-graduate mr-2"></i>Student 11</h2>
+                <div class="space-y-2">
+                    <p><span class="font-medium">Name:</span> Ayodhya Gupta</p>
+                    <p><span class="font-medium">Enrollment No:</span> 1234567890</p>
+                    <p><span class="font-medium">Fee Update:</span> Paid</p>
+                    <p><span class="font-medium">Bus Code:</span> ABC123</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div class="bg-white rounded-lg shadow-md p-6 mt-4">
+                <h2 class="text-2xl font-semibold mb-4 text-blue-500"><i class="fas fa-user-graduate mr-2"></i>Student 12</h2>
+                <div class="space-y-2">
+                    <p><span class="font-medium">Name:</span> Ayodhya Gupta</p>
+                    <p><span class="font-medium">Enrollment No:</span> 1234567890</p>
+                    <p><span class="font-medium">Fee Update:</span> Paid</p>
+                    <p><span class="font-medium">Bus Code:</span> ABC123</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>   
